@@ -135,25 +135,7 @@
 .suggestions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.suggestions button{border:1px solid var(--line);background:transparent;padding:7px 10px;font-size:11px;color:var(--muted);cursor:pointer}.suggestions button:hover{color:var(--ink);background:var(--paper2)}
 .answer{margin-top:16px;padding:18px;background:var(--paper2);border-left:3px solid var(--blue)}.answer strong{font:500 22px var(--serif)}.answer p{margin:6px 0 0;color:var(--muted);font-size:13px}
 .arch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.arch-card{border:1px solid var(--line);background:rgba(255,253,248,.55);padding:20px;min-height:190px}.arch-num{font-size:11px;letter-spacing:.12em;color:var(--blue)}.arch-card h3{font:500 23px var(--serif);margin:18px 0 8px}.arch-card p{font-size:12px;color:var(--muted);min-height:60px}.arch-card code{font:11px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--rust)}.source-legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;color:var(--muted);font-size:11px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:var(--line)}.dot.five{background:var(--blue)}.dot.four{background:var(--olive)}.dot.three{background:var(--rust)}
-
-    .simulator{border:1px solid var(--line);background:var(--white);box-shadow:var(--shadow);overflow:hidden}
-    .sim-top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 18px;border-bottom:1px solid var(--line);background:var(--paper2);flex-wrap:wrap}
-    .sim-modes{display:flex;gap:6px}.sim-modes button{border:1px solid var(--line);background:transparent;padding:8px 10px;font-size:12px;cursor:pointer}.sim-modes button.active{background:var(--ink);color:var(--white)}
-    .sim-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
-    .sim-panel{padding:20px;border-right:1px solid var(--line)}.sim-panel:last-child{border-right:0}
-    .panel-title{font-size:11px;letter-spacing:.14em;color:var(--blue);font-weight:700;text-transform:uppercase;margin-bottom:10px}
-    .sim-svg{width:100%;height:auto;display:block;background:#fbf9f3;border:1px solid var(--line)}
-    .sim-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.control{border:1px solid var(--line);padding:12px}.control label{display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-bottom:7px}.control output{font-variant-numeric:tabular-nums;color:var(--blue)}
-    .control input[type=range]{width:100%}.control select{width:100%;padding:9px;border:1px solid var(--line);background:var(--paper);font:inherit}
-    .sim-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.sim-actions button{border:1px solid var(--line);background:transparent;padding:9px 12px;font-size:12px;cursor:pointer}.sim-actions .primary{background:var(--ink);color:var(--white);border-color:var(--ink)}
-    .readouts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}.readout{border-top:2px solid var(--ink);padding:9px 6px}.readout b{display:block;font-size:17px;font-variant-numeric:tabular-nums}.readout span{font-size:10px;color:var(--muted)}
-    .ph-wrap{border:1px solid var(--line);background:#fbf9f3;padding:10px}.ph-wrap svg{width:100%;height:auto;display:block}.sim-note{margin-top:12px;font-size:11px;color:var(--muted);line-height:1.6}
-    .sim-stage{margin-top:12px;padding:11px 12px;background:var(--paper2);font-size:12px}.stagebar{display:flex;gap:5px;margin-top:8px}.stagebar span{height:4px;flex:1;background:var(--line)}.stagebar span.on{background:var(--blue)}
-    .sim-footer{padding:15px 18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .sim-lesson{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.lesson{border:1px solid var(--line);padding:14px;background:rgba(255,253,248,.55)}.lesson h4{margin:0 0 5px;font:500 19px var(--serif)}.lesson p{margin:0;font-size:11px;color:var(--muted)}
-    @media (max-width:900px){.sim-grid{grid-template-columns:1fr}.sim-panel{border-right:0;border-bottom:1px solid var(--line)}.sim-panel:last-child{border-bottom:0}.readouts{grid-template-columns:1fr 1fr}}
-    @media (max-width:620px){.sim-controls,.sim-lesson{grid-template-columns:1fr}.readouts{grid-template-columns:1fr 1fr}}
-    footer{padding:45px 0 65px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+footer{padding:45px 0 65px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
     footer .foot{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
 
     @media (max-width:900px){
@@ -176,17 +158,7 @@
       .cycle-graphic{min-height:380px}
       footer .foot{flex-direction:column}
     }
-  
-/* v4 — Tech / Archive / Future fusion */
-body{background:radial-gradient(circle at 85% 8%,rgba(31,112,139,.18),transparent 24%),radial-gradient(circle at 12% 22%,rgba(151,103,54,.10),transparent 22%),linear-gradient(180deg,#06131c 0,#0a1b24 38%,#10232a 64%,#15262a 100%);color:#dcecf0}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(94,195,221,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(94,195,221,.10) 1px,transparent 1px);background-size:32px 32px}
-header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)!important;border-color:rgba(65,190,220,.34)!important;box-shadow:inset 0 1px rgba(255,255,255,.04),0 0 28px rgba(0,167,204,.06)}
-.eyebrow,.panel-title,.sim-top strong{color:#65d9f1!important}.section-head h2,.story,.simulator h3{color:#edf9fb!important}.section-head p,.fact span,.lesson p,.sim-note{color:#9cb7bf!important}.sim-top,.sim-footer{border-color:rgba(65,190,220,.28)!important}.sim-modes button,.sim-actions button,.toggle button{background:#0c2835!important;color:#a9dce7!important;border-color:#1c5366!important}.sim-modes button.active,.sim-actions .primary,.toggle button.active{background:#0e91b5!important;color:white!important;box-shadow:0 0 18px rgba(24,194,235,.25)}
-.tech-lab-hero{margin:0 0 18px;border:1px solid rgba(74,203,232,.38);background:#071821;overflow:hidden;position:relative}.tech-lab-hero img{width:100%;display:block;opacity:.96}.tech-lab-hero:after{content:"INTERACTIVE ENGINEERING ARCHIVE";position:absolute;right:18px;bottom:14px;font:10px/1.2 monospace;letter-spacing:.18em;color:#74dff3;background:rgba(3,18,25,.72);padding:7px 10px;border:1px solid rgba(70,210,240,.35)}
-.real-components{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 18px 18px}.real-card{border:1px solid rgba(68,192,220,.28);background:rgba(5,20,28,.78);overflow:hidden}.real-card img{width:100%;height:128px;object-fit:cover;display:block;filter:saturate(.9) contrast(1.05)}.real-card div{padding:10px}.real-card b{display:block;color:#eaf8fb;font-size:13px}.real-card span{display:block;color:#89aab3;font-size:10px;margin-top:4px;line-height:1.45}.real-card em{font-style:normal;color:#c4935f;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
-@media(max-width:850px){.real-components{grid-template-columns:1fr 1fr}.tech-lab-hero:after{display:none}}
-@media(max-width:520px){.real-components{grid-template-columns:1fr}}
-</style>
+  </style>
 </head>
 <body>
 <div class="grain"></div>
@@ -195,7 +167,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
     <div class="brand">热的历史 / THE HISTORY OF HEAT</div>
     <div class="navlinks">
       <a href="#river">时间河流</a>
-      <a href="#simulator">仿真</a><a href="#cycle">制冷循环</a>
+      <a href="#cycle">制冷循环</a>
       <a href="#refrigerants">制冷剂</a>
       <a href="#archive">档案入口</a><a href="#ask">Ask Archive</a>
     </div>
@@ -267,66 +239,6 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
   </div>
 </section>
 
-
-<section id="simulator">
-  <div class="wrap">
-    <div class="section-head">
-      <div><div class="eyebrow">03 / Cooling Lab</div><h2>让历史变成可以“动手”的东西</h2></div>
-      <p>参考现代制冷循环模拟器的交互思路：左边看回路里发生什么，右边看 P-h 图如何变化；拖动工况，观察温差、压比和 COP 的联动。</p>
-    </div>
-    <div class="simulator">
-      <div class="sim-top">
-        <div><strong>Vapor Compression Lab</strong><span style="margin-left:10px;color:var(--muted);font-size:11px">教学演示模型 · 非工程设计计算</span></div>
-        <div class="sim-modes"><button class="active" data-sim-mode="simulate">模拟</button><button data-sim-mode="explore">理解</button><button data-sim-mode="practice">练习</button></div>
-      </div>
-      
-      <div class="tech-lab-hero"><img src="assets/cooling-lab-concept.png" alt="Cooling Archive 制冷循环实验室科技化界面概念图，展示写实压缩机、冷凝器、膨胀阀、蒸发器与 P-h 图"></div>
-<div class="sim-grid">
-        <div class="sim-panel">
-          <div class="panel-title">System schematic</div>
-          <svg id="simSchematic" class="sim-svg" viewBox="0 0 620 430" role="img" aria-label="蒸汽压缩制冷循环示意图">
-            <defs><marker id="simArrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#234b63"/></marker></defs>
-            <path d="M120 112 H488" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M505 132 V300" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M488 318 H120" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M103 300 V132" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/>
-            <g id="sg-compressor"><rect x="52" y="72" width="110" height="70" rx="8" fill="#f2efe8" stroke="#7a7d76" stroke-width="2"/><text x="107" y="101" text-anchor="middle" font-size="15">压缩机</text><text id="sgc" x="107" y="123" text-anchor="middle" font-size="10" fill="#64675f">做功 / 升压</text></g>
-            <g id="sg-condenser"><rect x="445" y="72" width="130" height="70" rx="8" fill="#fff0e6" stroke="#bc7756" stroke-width="2"/><text x="510" y="101" text-anchor="middle" font-size="15">冷凝器</text><text id="sgd" x="510" y="123" text-anchor="middle" font-size="10" fill="#64675f">向外放热</text></g>
-            <g id="sg-expansion"><rect x="445" y="286" width="130" height="70" rx="8" fill="#f2efe8" stroke="#7a7d76" stroke-width="2"/><text x="510" y="315" text-anchor="middle" font-size="15">膨胀装置</text><text id="sge" x="510" y="337" text-anchor="middle" font-size="10" fill="#64675f">节流 / ≈ 等焓</text></g>
-            <g id="sg-evaporator"><rect x="52" y="286" width="130" height="70" rx="8" fill="#eaf1f5" stroke="#5b8195" stroke-width="2"/><text x="117" y="315" text-anchor="middle" font-size="15">蒸发器</text><text id="sgv" x="117" y="337" text-anchor="middle" font-size="10" fill="#64675f">从被冷却空间吸热</text></g>
-            <text id="sg-center" x="310" y="206" text-anchor="middle" font-size="18" fill="#1d211f">热被搬到室外</text>
-            <circle id="refrigDot" cx="105" cy="112" r="6" fill="#a15e42"/>
-          </svg>
-          <div class="sim-stage"><div><strong id="stageText">STAGE 01 → 02 · 压缩</strong><span id="stageHint" style="float:right;color:var(--muted)">点击“运行一圈”</span></div><div class="stagebar"><span id="st1" class="on"></span><span id="st2"></span><span id="st3"></span><span id="st4"></span></div></div>
-        </div>
-        <div class="sim-panel">
-          <div class="panel-title">Pressure–enthalpy view</div>
-          <div class="ph-wrap"><svg id="phChart" viewBox="0 0 620 430" role="img" aria-label="简化 P-h 压焓图"><line x1="72" y1="360" x2="575" y2="360" stroke="#333"/><line x1="72" y1="360" x2="72" y2="48" stroke="#333"/><text x="575" y="388" font-size="12" text-anchor="end">焓 h →</text><text x="24" y="58" font-size="12" transform="rotate(-90 24 58)">压力 p</text><path id="dome" d="M155 336 C195 235 220 110 315 78 C410 110 435 235 490 336" fill="none" stroke="#7a7d76" stroke-width="2" stroke-dasharray="6 5"/><path id="cyclePath" d="" fill="none" stroke="#234b63" stroke-width="4"/><g id="phPts"></g><text x="120" y="342" font-size="10" fill="#64675f">液体</text><text x="280" y="180" font-size="10" fill="#64675f">两相区</text><text x="470" y="342" font-size="10" fill="#64675f">过热蒸气</text></svg></div>
-          <div class="sim-controls">
-            <div class="control"><label>制冷剂 <output id="refOut">R-134a</output></label><select id="refSelect"><option>R-134a</option><option>R-410A</option><option>R-290</option><option>R-717</option><option>R-744</option></select></div>
-            <div class="control"><label>蒸发温度 <output id="teOut">-10 °C</output></label><input id="te" type="range" min="-30" max="10" value="-10" step="1"/></div>
-            <div class="control"><label>冷凝温度 <output id="tcOut">45 °C</output></label><input id="tc" type="range" min="25" max="60" value="45" step="1"/></div>
-            <div class="control"><label>过热度 <output id="shOut">5 K</output></label><input id="sh" type="range" min="0" max="20" value="5" step="1"/></div>
-            <div class="control"><label>过冷度 <output id="scOut">5 K</output></label><input id="sc" type="range" min="0" max="15" value="5" step="1"/></div>
-            <div class="control"><label>压缩机等熵效率 <output id="etaOut">80%</output></label><input id="eta" type="range" min="50" max="95" value="80" step="1"/></div>
-          </div>
-          <div class="sim-actions"><button id="runSim" class="primary">▶ 运行一圈</button><button id="resetSim">↻ 重置</button><button id="domeBtn">饱和穹顶</button></div>
-          <div class="readouts" aria-live="polite">
-            <div class="readout"><b id="rCop">—</b><span>COP</span></div><div class="readout"><b id="rRatio">—</b><span>压比（估算）</span></div><div class="readout"><b id="rQ">—</b><span>单位质量制冷量 kJ/kg</span></div><div class="readout"><b id="rW">—</b><span>单位质量功 kJ/kg</span></div><div class="readout"><b id="rMass">—</b><span>1 kW 时流量 g/s</span></div><div class="readout"><b id="rDischarge">—</b><span>排气温度 °C（估算）</span></div><div class="readout"><b id="rLift">—</b><span>温度提升 K</span></div><div class="readout"><b id="rMode">教学</b><span>计算模式</span></div>
-          </div>
-          <div class="sim-note">说明：为保持这个历史网站无外部依赖，本原型使用简化的相对工况模型来演示趋势，不应替代制冷剂物性数据库、P-h 图软件或工程选型计算。正式版可以接入 CoolProp / REFPROP 类物性库，并对每个状态点保存来源与计算方法。</div>
-        </div>
-      </div>
-      
-      <div class="real-components" aria-label="实体部件参考">
-        <article class="real-card"><img src="assets/compressor.png" alt="半封闭式制冷压缩机绘图"><div><em>Real component 01</em><b>压缩机 · Compressor</b><span>金属壳体、驱动机构与吸排气接口。负责提升制冷剂蒸气压力与温度。</span></div></article>
-        <article class="real-card"><img src="assets/condenser.png" alt="风冷冷凝器绘图"><div><em>Real component 02</em><b>冷凝器 · Condenser</b><span>风机、翅片与换热管组成的放热端，将高压蒸气冷凝为液体。</span></div></article>
-        <article class="real-card"><img src="assets/expansion-valve.png" alt="热力膨胀阀绘图"><div><em>Real component 03</em><b>膨胀阀 · Expansion Valve</b><span>精密节流元件，通过压降控制蒸发器供液并形成低温两相混合物。</span></div></article>
-        <article class="real-card"><img src="assets/evaporator.png" alt="翅片管蒸发器绘图"><div><em>Real component 04</em><b>蒸发器 · Evaporator</b><span>低压制冷剂在其中吸热蒸发，是系统真正从被冷却空间“搬走热”的位置。</span></div></article>
-      </div>
-<div id="simLesson" class="sim-lesson" style="padding:0 18px 18px"><div class="lesson"><h4>为什么蒸发温度下降，COP 往往下降？</h4><p>温度提升变大，高低压侧的压差/压比通常增大，压缩机单位质量功上升；这个模拟器把这种趋势直接画出来。</p></div><div class="lesson"><h4>为什么 P-h 图比“冷媒流动动画”更重要？</h4><p>动画告诉你设备在做什么；P-h 图告诉工程师每个状态点的热力学路径与能量差。</p></div></div>
-      <div class="sim-footer"><span>交互灵感参考：MechSimulator Refrigeration Cycle Simulator（回路 + P-h + 参数滑块 + staged animation）。本项目自行设计视觉、数据模型和知识档案层。</span><a href="https://mechsimulator.com/tools/refrigeration-cycle/" target="_blank" rel="noopener">查看参考原型 ↗</a></div>
-    </div>
-  </div>
-</section>
-
 <section id="cycle">
   <div class="wrap">
     <div class="section-head">
@@ -366,7 +278,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
 <section id="refrigerants">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="eyebrow">05 / The Refrigerant Paradox</div><h2>为什么“完美制冷剂”<br>总会变得不完美？</h2></div>
+      <div><div class="eyebrow">04 / The Refrigerant Paradox</div><h2>为什么“完美制冷剂”<br>总会变得不完美？</h2></div>
       <p>制冷剂史是最能体现工程权衡的主线之一：安全、效率、成本、压力、材料兼容性、臭氧层与气候影响，几乎从来不能同时最优。</p>
     </div>
     <div class="refrig-grid">
@@ -391,7 +303,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
 <section>
   <div class="wrap">
     <div class="section-head">
-      <div><div class="eyebrow">06 / People, Reframed</div><h2>人物，不是头像墙</h2></div>
+      <div><div class="eyebrow">05 / People, Reframed</div><h2>人物，不是头像墙</h2></div>
       <p>把人物放回技术链：他/她到底解决了哪个具体问题？又依赖了哪些前人的工作？</p>
     </div>
     <div class="people">
@@ -405,7 +317,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
 <section id="archive">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="eyebrow">07 / Choose Your Depth</div><h2>同一网站，三种阅读方式</h2></div>
+      <div><div class="eyebrow">06 / Choose Your Depth</div><h2>同一网站，三种阅读方式</h2></div>
       <p>首页是博物馆入口，下面这些入口则把内容分层，方便不同背景的读者直接进入自己的路径。</p>
     </div>
     <div class="paths">
@@ -419,7 +331,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
 <section id="ask">
   <div class="wrap ask-wrap">
     <div class="section-head">
-      <div><div class="eyebrow">08 / Ask the Archive</div><h2>不要只问 AI，<br>先问“证据在哪里”</h2></div>
+      <div><div class="eyebrow">07 / Ask the Archive</div><h2>不要只问 AI，<br>先问“证据在哪里”</h2></div>
       <p>这是未来知识库的入口。当前版本是本地原型：它把问题匹配到档案节点。正式版可以接入 RAG，让回答始终回到专利、论文、档案与设备资料。</p>
     </div>
     <div class="askbox">
@@ -434,7 +346,7 @@ header,.simulator,.sim-panel,.fact,.readout,.lesson{background:rgba(5,22,31,.82)
 <section id="architecture">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="eyebrow">09 / Knowledge Architecture</div><h2>网页只是表面，<br>真正的资产是知识底座</h2></div>
+      <div><div class="eyebrow">08 / Knowledge Architecture</div><h2>网页只是表面，<br>真正的资产是知识底座</h2></div>
       <p>每个节点以后都可以同时连接年份、人物、设备、制冷剂、原理和来源。这样网站可以不断扩展，而不是越做越乱。</p>
     </div>
     <div class="arch-grid">
@@ -505,43 +417,6 @@ askBtn.addEventListener('click',doAsk);
 askInput.addEventListener('keydown',e=>{if(e.key==='Enter')doAsk()});
 document.querySelectorAll('.suggestions button').forEach(b=>b.addEventListener('click',()=>{askInput.value=b.dataset.q;doAsk()}));
 
-</script>
-
-<script>
-(function(){
-  const $=s=>document.querySelector(s);
-  const qs=s=>document.querySelectorAll(s);
-  const state={ref:'R-134a',te:-10,tc:45,sh:5,sc:5,eta:80,stage:0,anim:null,dome:true};
-  const refFactor={'R-134a':1.00,'R-410A':1.08,'R-290':0.96,'R-717':0.91,'R-744':1.20};
-  const clamp=(n,a,b)=>Math.min(b,Math.max(a,n));
-  function calc(){
-    const lift=Math.max(10,state.tc-state.te);
-    const ratio=1+0.085*lift*refFactor[state.ref];
-    const q=Math.max(55,145-1.15*lift+0.85*state.sc-0.45*state.sh);
-    const w=Math.max(10,18+0.62*lift/refFactor[state.ref]+(100-state.eta)*0.42+state.sh*0.08);
-    const cop=q/w;
-    const mdot=1000/q;
-    const discharge=state.tc+35+0.70*lift*(100/state.eta-0.95)+0.12*state.sh;
-    return {lift,ratio,q,w,cop,mdot,discharge};
-  }
-  function setText(id,t){const e=$(id);if(e)e.textContent=t}
-  function render(){
-    const c=calc();
-    setText('#refOut',state.ref);setText('#teOut',state.te+' °C');setText('#tcOut',state.tc+' °C');setText('#shOut',state.sh+' K');setText('#scOut',state.sc+' K');setText('#etaOut',state.eta+'%');
-    setText('#rCop',c.cop.toFixed(2));setText('#rRatio',c.ratio.toFixed(1)+'×');setText('#rQ',c.q.toFixed(1));setText('#rW',c.w.toFixed(1));setText('#rMass',c.mdot.toFixed(2));setText('#rDischarge',c.discharge.toFixed(0));setText('#rLift',c.lift.toFixed(0));
-    const p1={x:190,y:315},p2={x:255,y:105},p3={x:448,y:110},p4={x:420,y:320};
-    const path=document.querySelector('#cyclePath'); if(path) path.setAttribute('d',`M ${p1.x} ${p1.y} L ${p2.x} ${p2.y} L ${p3.x} ${p3.y} L ${p4.x} ${p4.y} L ${p1.x} ${p1.y}`);
-    const pts=document.querySelector('#phPts'); if(pts){pts.innerHTML='';[[p1,'1'],[p2,'2'],[p3,'3'],[p4,'4']].forEach(([p,n])=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');const c1=document.createElementNS('http://www.w3.org/2000/svg','circle');c1.setAttribute('cx',p.x);c1.setAttribute('cy',p.y);c1.setAttribute('r','7');c1.setAttribute('fill','#a15e42');const tx=document.createElementNS('http://www.w3.org/2000/svg','text');tx.setAttribute('x',p.x+10);tx.setAttribute('y',p.y-8);tx.setAttribute('font-size','12');tx.textContent=n;g.append(c1,tx);pts.appendChild(g)})}
-    const dot=$('#refrigDot'); if(dot){const pos=[p1,p2,p3,p4][state.stage%4];dot.setAttribute('cx',pos.x);dot.setAttribute('cy',pos.y)}
-  }
-  function updateStage(i){state.stage=i;['#st1','#st2','#st3','#st4'].forEach((id,n)=>$(id)?.classList.toggle('on',n<=i));const names=['压缩','冷凝','膨胀','蒸发'];setText('#stageText',`STAGE ${String(i+1).padStart(2,'0')} · ${names[i]}`);setText('#stageHint',i===0?'正在把热力学状态抬到高压侧':'继续观察状态点如何移动');}
-  function run(){if(state.anim)return;let i=0;updateStage(0);render();state.anim=setInterval(()=>{i++;if(i<4){updateStage(i);render()}else{clearInterval(state.anim);state.anim=null;updateStage(3);setText('#stageHint','一圈完成 · 可继续调参数')}} ,950)}
-  function reset(){if(state.anim){clearInterval(state.anim);state.anim=null}Object.assign(state,{ref:'R-134a',te:-10,tc:45,sh:5,sc:5,eta:80,stage:0,dome:true});$('#refSelect').value=state.ref;['te','tc','sh','sc','eta'].forEach(id=>$('#'+id).value=state[id]);$('#dome').style.display='block';updateStage(0);render()}
-  ['te','tc','sh','sc','eta'].forEach(id=>$('#'+id).addEventListener('input',e=>{state[id]=Number(e.target.value);render()}));
-  $('#refSelect').addEventListener('change',e=>{state.ref=e.target.value;render()});$('#runSim').addEventListener('click',run);$('#resetSim').addEventListener('click',reset);$('#domeBtn').addEventListener('click',()=>{state.dome=!state.dome;$('#dome').style.display=state.dome?'block':'none'});
-  qs('[data-sim-mode]').forEach(b=>b.addEventListener('click',()=>{qs('[data-sim-mode]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const mode=b.dataset.simMode;setText('#rMode',mode==='simulate'?'教学':mode==='explore'?'理解':'练习');const l=$('#simLesson');if(l)l.style.opacity=mode==='explore'?'1':'0.92'}));
-  render();updateStage(0);
-})();
 </script>
 </body>
 </html>
