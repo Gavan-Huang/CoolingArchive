@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>人类如何学会控制热｜制冷与空调史</title>
+  <meta name="description" content="一部从天然冰到热泵、从湿度控制到数据中心冷却的制冷与空调技术史。" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="grain"></div>
+<nav>
+  <div class="wrap bar">
+    <div class="brand">热的历史 / THE HISTORY OF HEAT</div>
+    <div class="navlinks">
+      <a href="#river">时间河流</a>
+      <a href="#simulator">仿真</a><a href="#cycle">制冷循环</a>
+      <a href="#refrigerants">制冷剂</a>
+      <a href="#archive">档案入口</a><a href="#ask">Ask Archive</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Refrigeration & Air Conditioning History</div>
+    <h1>人类如何学会<br>控制热</h1>
+    <p>从冰窖、湿帘与人工造冰，到压缩机、热泵和数据中心。制冷空调史不只是“谁发明了空调”，而是人类如何一步步学会搬运热、控制湿度，并把舒适变成现代基础设施。</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#river">开始探索时间河流 ↘</a>
+      <a class="btn" href="#cycle">先看懂一台空调</a>
+    </div>
+    <div class="hero-meta">
+      <div class="meta"><strong>问题驱动</strong>从“为什么要降温”开始，而不是从年份开始。</div>
+      <div class="meta"><strong>双层阅读</strong>同一节点，既给入门解释，也给工程细节。</div>
+      <div class="meta"><strong>证据意识</strong>把原始文献、档案与二手史料分层。</div>
+      <div class="meta"><strong>持续生长</strong>为设备、专利、标准和论文预留入口。</div>
+    </div>
+  </div>
+</header>
+
+<section id="river">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">01 / Technology River</div><h2>不是一条时间线，<br>而是五条并行的技术河流</h2></div>
+      <p>拖动、点击节点，观察同一时期的需求、制冷方式、制冷剂、压缩机与环境代价如何互相推动。</p>
+    </div>
+    <div class="river">
+      <div class="river-inner">
+        <div class="river-labels">
+          <div class="river-label">需求 / Need</div>
+          <div class="river-label">制冷方式 / Method</div>
+          <div class="river-label">制冷剂 / Refrigerant</div>
+          <div class="river-label">压缩机 / Compressor</div>
+          <div class="river-label">能源与环境 / Energy</div>
+        </div>
+        <div class="tracks">
+          <div class="years"><span>1750</span><span>1850</span><span>1900</span><span>1950</span><span>2000</span><span>今天</span></div>
+          <div class="track"><div class="flow"></div><div class="node active" style="left:8%" data-id="ice"><i></i><span>天然冰</span></div><div class="node" style="left:26%" data-id="factory"><i></i><span>工业生产</span></div><div class="node" style="left:45%" data-id="comfort"><i></i><span>舒适</span></div><div class="node" style="left:62%" data-id="electronics"><i></i><span>电子</span></div><div class="node" style="left:88%" data-id="dc"><i></i><span>数据中心</span></div></div>
+          <div class="track"><div class="flow"></div><div class="node active" style="left:10%" data-id="ice"><i></i><span>冰窖 / 冰运</span></div><div class="node" style="left:25%" data-id="factory"><i></i><span>人工制冰</span></div><div class="node" style="left:43%" data-id="compress"><i></i><span>蒸汽压缩</span></div><div class="node" style="left:63%" data-id="centrifugal"><i></i><span>离心 / 螺杆</span></div><div class="node" style="left:91%" data-id="heatpump"><i></i><span>热泵</span></div></div>
+          <div class="track"><div class="flow"></div><div class="node active" style="left:29%" data-id="factory"><i></i><span>氨等早期工质</span></div><div class="node" style="left:53%" data-id="cfc"><i></i><span>CFC</span></div><div class="node" style="left:66%" data-id="hfc"><i></i><span>HFC</span></div><div class="node" style="left:91%" data-id="natural"><i></i><span>天然工质</span></div></div>
+          <div class="track"><div class="flow"></div><div class="node active" style="left:31%" data-id="factory"><i></i><span>往复</span></div><div class="node" style="left:58%" data-id="centrifugal"><i></i><span>离心</span></div><div class="node" style="left:78%" data-id="centrifugal"><i></i><span>螺杆</span></div><div class="node" style="left:93%" data-id="dc"><i></i><span>变频 / 磁悬浮</span></div></div>
+          <div class="track"><div class="flow"></div><div class="node active" style="left:9%" data-id="ice"><i></i><span>天然资源</span></div><div class="node" style="left:55%" data-id="cfc"><i></i><span>化学稳定性</span></div><div class="node" style="left:73%" data-id="hfc"><i></i><span>臭氧 / 气候问题</span></div><div class="node" style="left:94%" data-id="natural"><i></i><span>低 GWP</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div id="timelineCard" class="timeline-card">
+      <div class="date">1750–</div>
+      <div><h3>冷并不等于“制冷”</h3><p>在机械制冷出现之前，人类已经拥有复杂的降温经验：储冰、地下空间、夜间通风、湿帘与蒸发。真正的技术分水岭，是把“自然里存在的冷”变成可以随时生产、搬运与控制的冷。</p><div><span class="tag">入门：先理解需求</span><span class="tag">证据：★☆☆☆☆</span></div><div class="evidence">史学提示：早期“空调”叙事常把不同文明的被动降温技术与现代机械空调混为一谈。本网站将两者区分。</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">02 / The Core Idea</div>
+      <div class="story">一台空调最神奇的地方，不是“产生冷”。<br><br>它做的是更反直觉的事：<em>把室内不想要的热，搬到室外。</em></div>
+    </div>
+    <div class="fact-grid">
+      <div class="fact"><b>显热</b><span>空气温度发生变化时对应的热量。</span></div>
+      <div class="fact"><b>潜热</b><span>水分发生相变时吸收或释放的热量。</span></div>
+      <div class="fact"><b>露点</b><span>空气开始凝结出水的温度，是除湿理解的关键。</span></div>
+      <div class="fact"><b>COP</b><span>衡量热泵/制冷系统搬运热量效率的核心指标之一。</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="simulator">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">03 / Cooling Lab</div><h2>让历史变成可以“动手”的东西</h2></div>
+      <p>参考现代制冷循环模拟器的交互思路：左边看回路里发生什么，右边看 P-h 图如何变化；拖动工况，观察温差、压比和 COP 的联动。</p>
+    </div>
+    <div class="simulator">
+      <div class="sim-top">
+        <div><strong>Vapor Compression Lab</strong><span style="margin-left:10px;color:var(--muted);font-size:11px">教学演示模型 · 非工程设计计算</span></div>
+        <div class="sim-modes"><button class="active" data-sim-mode="simulate">模拟</button><button data-sim-mode="explore">理解</button><button data-sim-mode="practice">练习</button></div>
+      </div>
+      
+      <div class="tech-lab-hero"><img src="./assets/images/ui/cooling-lab-concept.png" alt="Cooling Archive 制冷循环实验室科技化界面概念图，展示写实压缩机、冷凝器、膨胀阀、蒸发器与 P-h 图"></div>
+<div class="sim-grid">
+        <div class="sim-panel">
+          <div class="panel-title">System schematic</div>
+          <svg id="simSchematic" class="sim-svg" viewBox="0 0 620 430" role="img" aria-label="蒸汽压缩制冷循环示意图">
+            <defs><marker id="simArrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#234b63"/></marker></defs>
+            <path d="M120 112 H488" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M505 132 V300" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M488 318 H120" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/><path d="M103 300 V132" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#simArrow)"/>
+            <g id="sg-compressor"><rect x="52" y="72" width="110" height="70" rx="8" fill="#f2efe8" stroke="#7a7d76" stroke-width="2"/><text x="107" y="101" text-anchor="middle" font-size="15">压缩机</text><text id="sgc" x="107" y="123" text-anchor="middle" font-size="10" fill="#64675f">做功 / 升压</text></g>
+            <g id="sg-condenser"><rect x="445" y="72" width="130" height="70" rx="8" fill="#fff0e6" stroke="#bc7756" stroke-width="2"/><text x="510" y="101" text-anchor="middle" font-size="15">冷凝器</text><text id="sgd" x="510" y="123" text-anchor="middle" font-size="10" fill="#64675f">向外放热</text></g>
+            <g id="sg-expansion"><rect x="445" y="286" width="130" height="70" rx="8" fill="#f2efe8" stroke="#7a7d76" stroke-width="2"/><text x="510" y="315" text-anchor="middle" font-size="15">膨胀装置</text><text id="sge" x="510" y="337" text-anchor="middle" font-size="10" fill="#64675f">节流 / ≈ 等焓</text></g>
+            <g id="sg-evaporator"><rect x="52" y="286" width="130" height="70" rx="8" fill="#eaf1f5" stroke="#5b8195" stroke-width="2"/><text x="117" y="315" text-anchor="middle" font-size="15">蒸发器</text><text id="sgv" x="117" y="337" text-anchor="middle" font-size="10" fill="#64675f">从被冷却空间吸热</text></g>
+            <text id="sg-center" x="310" y="206" text-anchor="middle" font-size="18" fill="#1d211f">热被搬到室外</text>
+            <circle id="refrigDot" cx="105" cy="112" r="6" fill="#a15e42"/>
+          </svg>
+          <div class="sim-stage"><div><strong id="stageText">STAGE 01 → 02 · 压缩</strong><span id="stageHint" style="float:right;color:var(--muted)">点击“运行一圈”</span></div><div class="stagebar"><span id="st1" class="on"></span><span id="st2"></span><span id="st3"></span><span id="st4"></span></div></div>
+        </div>
+        <div class="sim-panel">
+          <div class="panel-title">Pressure–enthalpy view</div>
+          <div class="ph-wrap"><svg id="phChart" viewBox="0 0 620 430" role="img" aria-label="简化 P-h 压焓图"><line x1="72" y1="360" x2="575" y2="360" stroke="#333"/><line x1="72" y1="360" x2="72" y2="48" stroke="#333"/><text x="575" y="388" font-size="12" text-anchor="end">焓 h →</text><text x="24" y="58" font-size="12" transform="rotate(-90 24 58)">压力 p</text><path id="dome" d="M155 336 C195 235 220 110 315 78 C410 110 435 235 490 336" fill="none" stroke="#7a7d76" stroke-width="2" stroke-dasharray="6 5"/><path id="cyclePath" d="" fill="none" stroke="#234b63" stroke-width="4"/><g id="phPts"></g><text x="120" y="342" font-size="10" fill="#64675f">液体</text><text x="280" y="180" font-size="10" fill="#64675f">两相区</text><text x="470" y="342" font-size="10" fill="#64675f">过热蒸气</text></svg></div>
+          <div class="sim-controls">
+            <div class="control"><label>制冷剂 <output id="refOut">R-134a</output></label><select id="refSelect"><option>R-134a</option><option>R-410A</option><option>R-290</option><option>R-717</option><option>R-744</option></select></div>
+            <div class="control"><label>蒸发温度 <output id="teOut">-10 °C</output></label><input id="te" type="range" min="-30" max="10" value="-10" step="1"/></div>
+            <div class="control"><label>冷凝温度 <output id="tcOut">45 °C</output></label><input id="tc" type="range" min="25" max="60" value="45" step="1"/></div>
+            <div class="control"><label>过热度 <output id="shOut">5 K</output></label><input id="sh" type="range" min="0" max="20" value="5" step="1"/></div>
+            <div class="control"><label>过冷度 <output id="scOut">5 K</output></label><input id="sc" type="range" min="0" max="15" value="5" step="1"/></div>
+            <div class="control"><label>压缩机等熵效率 <output id="etaOut">80%</output></label><input id="eta" type="range" min="50" max="95" value="80" step="1"/></div>
+          </div>
+          <div class="sim-actions"><button id="runSim" class="primary">▶ 运行一圈</button><button id="resetSim">↻ 重置</button><button id="domeBtn">饱和穹顶</button></div>
+          <div class="readouts" aria-live="polite">
+            <div class="readout"><b id="rCop">—</b><span>COP</span></div><div class="readout"><b id="rRatio">—</b><span>压比（估算）</span></div><div class="readout"><b id="rQ">—</b><span>单位质量制冷量 kJ/kg</span></div><div class="readout"><b id="rW">—</b><span>单位质量功 kJ/kg</span></div><div class="readout"><b id="rMass">—</b><span>1 kW 时流量 g/s</span></div><div class="readout"><b id="rDischarge">—</b><span>排气温度 °C（估算）</span></div><div class="readout"><b id="rLift">—</b><span>温度提升 K</span></div><div class="readout"><b id="rMode">教学</b><span>计算模式</span></div>
+          </div>
+          <div class="sim-note">说明：为保持这个历史网站无外部依赖，本原型使用简化的相对工况模型来演示趋势，不应替代制冷剂物性数据库、P-h 图软件或工程选型计算。正式版可以接入 CoolProp / REFPROP 类物性库，并对每个状态点保存来源与计算方法。</div>
+        </div>
+      </div>
+      
+      <div class="real-components" aria-label="实体部件参考">
+        <article class="real-card"><img src="./assets/images/components/compressor.png" alt="半封闭式制冷压缩机绘图"><div><em>Real component 01</em><b>压缩机 · Compressor</b><span>金属壳体、驱动机构与吸排气接口。负责提升制冷剂蒸气压力与温度。</span></div></article>
+        <article class="real-card"><img src="./assets/images/components/condenser.png" alt="风冷冷凝器绘图"><div><em>Real component 02</em><b>冷凝器 · Condenser</b><span>风机、翅片与换热管组成的放热端，将高压蒸气冷凝为液体。</span></div></article>
+        <article class="real-card"><img src="./assets/images/components/expansion-valve.png" alt="热力膨胀阀绘图"><div><em>Real component 03</em><b>膨胀阀 · Expansion Valve</b><span>精密节流元件，通过压降控制蒸发器供液并形成低温两相混合物。</span></div></article>
+        <article class="real-card"><img src="./assets/images/components/evaporator.png" alt="翅片管蒸发器绘图"><div><em>Real component 04</em><b>蒸发器 · Evaporator</b><span>低压制冷剂在其中吸热蒸发，是系统真正从被冷却空间“搬走热”的位置。</span></div></article>
+      </div>
+<div id="simLesson" class="sim-lesson" style="padding:0 18px 18px"><div class="lesson"><h4>为什么蒸发温度下降，COP 往往下降？</h4><p>温度提升变大，高低压侧的压差/压比通常增大，压缩机单位质量功上升；这个模拟器把这种趋势直接画出来。</p></div><div class="lesson"><h4>为什么 P-h 图比“冷媒流动动画”更重要？</h4><p>动画告诉你设备在做什么；P-h 图告诉工程师每个状态点的热力学路径与能量差。</p></div></div>
+      <div class="sim-footer"><span>交互灵感参考：MechSimulator Refrigeration Cycle Simulator（回路 + P-h + 参数滑块 + staged animation）。本项目自行设计视觉、数据模型和知识档案层。</span><a href="https://mechsimulator.com/tools/refrigeration-cycle/" target="_blank" rel="noopener">查看参考原型 ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="cycle">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">03 / Open the Machine</div><h2>拆开一台空调</h2></div>
+      <p>初学者看“热从哪里到哪里”；工程师可以切换到压力、焓与状态变化视图。先理解能量方向，再进入公式。</p>
+    </div>
+    <div class="toggle" aria-label="view toggle"><button class="active" data-view="simple">小白视图</button><button data-view="engineering">工程视图</button></div>
+    <div class="cycle">
+      <div class="cycle-graphic">
+        <svg viewBox="0 0 620 420" role="img" aria-label="简化蒸汽压缩制冷循环">
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#234b63"/></marker>
+          </defs>
+          <path d="M120 120 H500" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+          <path d="M500 120 V300" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+          <path d="M500 300 H120" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+          <path d="M120 300 V120" stroke="#234b63" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+          <g class="component" data-part="compressor"><rect x="70" y="70" width="100" height="65" rx="8" class="neutral" stroke-width="2"/><text x="120" y="98" text-anchor="middle" font-size="14">压缩机</text><text id="compSub" x="120" y="118" text-anchor="middle" font-size="10" fill="#64675f">做功</text></g>
+          <g class="component" data-part="condenser"><rect x="450" y="70" width="120" height="65" rx="8" class="hot" stroke-width="2"/><text x="510" y="98" text-anchor="middle" font-size="14">冷凝器</text><text id="condSub" x="510" y="118" text-anchor="middle" font-size="10" fill="#64675f">向外放热</text></g>
+          <g class="component" data-part="expansion"><rect x="450" y="285" width="120" height="65" rx="8" class="neutral" stroke-width="2"/><text x="510" y="313" text-anchor="middle" font-size="14">膨胀装置</text><text id="expSub" x="510" y="333" text-anchor="middle" font-size="10" fill="#64675f">降压</text></g>
+          <g class="component" data-part="evaporator"><rect x="70" y="285" width="120" height="65" rx="8" class="cold" stroke-width="2"/><text x="130" y="313" text-anchor="middle" font-size="14">蒸发器</text><text id="evapSub" x="130" y="333" text-anchor="middle" font-size="10" fill="#64675f">从室内吸热</text></g>
+          <text x="310" y="103" text-anchor="middle" font-size="12" fill="#a15e42">高压侧</text>
+          <text x="310" y="323" text-anchor="middle" font-size="12" fill="#315f76">低压侧</text>
+          <text id="viewCaption" x="310" y="208" text-anchor="middle" font-size="16" fill="#1d211f">热被搬到室外</text>
+        </svg>
+      </div>
+      <div class="cycle-notes">
+        <div class="cycle-note active" data-part="compressor"><div class="num">01</div><h3>压缩</h3><p class="simple">给制冷剂做功，让它进入高压高温状态。</p><p class="eng" style="display:none">理想化模型可近似等熵压缩；实际系统需考虑等熵效率、过热度、排气温度等。</p></div>
+        <div class="cycle-note" data-part="condenser"><div class="num">02</div><h3>冷凝</h3><p class="simple">制冷剂把从室内带出来的热，加上压缩机输入的功，排给室外空气。</p><p class="eng" style="display:none">高压制冷剂在冷凝器中放热并相变；热侧能力可视为 Q̇cond ≈ Q̇evap + Ẇcomp。</p></div>
+        <div class="cycle-note" data-part="expansion"><div class="num">03</div><h3>膨胀</h3><p class="simple">压力骤降，制冷剂准备在更低温度下蒸发。</p><p class="eng" style="display:none">典型节流过程近似等焓：h₃ ≈ h₄；闪蒸气比例与工质性质相关。</p></div>
+        <div class="cycle-note" data-part="evaporator"><div class="num">04</div><h3>蒸发</h3><p class="simple">制冷剂从室内空气中吸热，蒸发后回到压缩机。</p><p class="eng" style="display:none">关键变量包括蒸发温度、过热度、换热端温差与空气侧含湿量，除湿时还会发生凝结潜热释放。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="refrigerants">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">05 / The Refrigerant Paradox</div><h2>为什么“完美制冷剂”<br>总会变得不完美？</h2></div>
+      <p>制冷剂史是最能体现工程权衡的主线之一：安全、效率、成本、压力、材料兼容性、臭氧层与气候影响，几乎从来不能同时最优。</p>
+    </div>
+    <div class="refrig-grid">
+      <article class="refrig"><div class="era">EARLY SYSTEMS</div><h3>氨 / 氨等</h3><p>工业制冷的重要早期工质。性能与成熟度较高，但毒性、材料与系统管理要求不能忽略。</p></article>
+      <article class="refrig"><div class="era">CFC ERA</div><h3>CFC</h3><p>化学稳定、可制造且使用方便，推动家用与商业制冷扩张；后来被发现与臭氧层损耗相关。</p></article>
+      <article class="refrig risk"><div class="era">TRANSITION</div><h3>HCFC / HFC</h3><p>用于替代部分 CFC。臭氧层问题缓解后，温室效应问题又成为下一轮技术迁移的重要驱动力。</p></article>
+      <article class="refrig current"><div class="era">NATURAL</div><h3>CO₂ / NH₃ / 烃类</h3><p>天然工质重新受到关注。高压、可燃性或安全边界等工程约束，成为系统设计的一部分。</p></article>
+      <article class="refrig current"><div class="era">TODAY →</div><h3>低 GWP 路线</h3><p>现代选择越来越像多目标优化：效率、安全、法规、生命周期影响与应用场景共同决定方案。</p></article>
+    </div>
+    <div class="arrowline">技术演化往往不是“旧的错了，新的对了”，而是约束条件发生了变化。</div>
+    <div class="contradiction">
+      <div><div class="kicker">A useful historical lens</div><h3>每一次解决问题，都会制造下一道问题。</h3><p>把这条逻辑放到网页里，比单纯罗列“发明年表”更能解释为什么 HVAC 技术会不断迭代。</p></div>
+      <div class="right"><div class="mini-path">
+        <div class="mini-step"><strong>安全</strong>早期工质推动系统落地，但毒性/可燃性构成约束。</div>
+        <div class="mini-step"><strong>便利</strong>化学稳定性降低了使用门槛，却引出环境外部性。</div>
+        <div class="mini-step"><strong>环保</strong>替代路线降低某些环境风险，又带来成本、压力或系统效率的权衡。</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">06 / People, Reframed</div><h2>人物，不是头像墙</h2></div>
+      <p>把人物放回技术链：他/她到底解决了哪个具体问题？又依赖了哪些前人的工作？</p>
+    </div>
+    <div class="people">
+      <article class="person"><div class="role">Air conditioning</div><h3>Willis Carrier</h3><p>常被称为“现代空调之父”，但更准确的入口是空气调节工程：温度与湿度控制如何服务工业生产。</p><div class="instead"><b>不要只记：</b>“1902 年发明空调”<br><b>更值得记：</b>“空气处理成为一门工程系统。”</div></article>
+      <article class="person"><div class="role">Industrial refrigeration</div><h3>Carl von Linde</h3><p>连接热力学、气体液化与工业制冷的重要人物。适合用来讲“科学原理如何变成工业系统”。</p><div class="instead"><b>不要只记：</b>一个发明年份<br><b>更值得记：</b>“低温技术开始工业化。”</div></article>
+      <article class="person"><div class="role">Thermodynamics</div><h3>工程与科学共同体</h3><p>制冷史并非单一英雄史。压缩机、换热器、密封、电机、控制与材料同时进步，才使系统真正可靠。</p><div class="instead"><b>不要只记：</b>一个“天才”<br><b>更值得记：</b>“一整套工程能力共同成熟。”</div></article>
+    </div>
+  </div>
+</section>
+
+<section id="archive">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">07 / Choose Your Depth</div><h2>同一网站，三种阅读方式</h2></div>
+      <p>首页是博物馆入口，下面这些入口则把内容分层，方便不同背景的读者直接进入自己的路径。</p>
+    </div>
+    <div class="paths">
+      <a class="path" href="#river"><div class="icon">◎</div><div><h3>20 分钟入门</h3><p>问题 → 故事 → 一台空调怎么工作 → 为什么制冷剂会更换。</p></div></a>
+      <a class="path" href="#cycle"><div class="icon">⌁</div><div><h3>工程师路线</h3><p>制冷循环 → 压缩机 → 换热器 → 工质 → 能效指标 → 系统权衡。</p></div></a>
+      <a class="path" href="#refrigerants"><div class="icon">▱</div><div><h3>研究 / 档案路线</h3><p>原始专利、论文、产品手册、标准、史料争议与证据等级。</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="ask">
+  <div class="wrap ask-wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">08 / Ask the Archive</div><h2>不要只问 AI，<br>先问“证据在哪里”</h2></div>
+      <p>这是未来知识库的入口。当前版本是本地原型：它把问题匹配到档案节点。正式版可以接入 RAG，让回答始终回到专利、论文、档案与设备资料。</p>
+    </div>
+    <div class="askbox">
+      <div class="asktop"><span>ASK THE ARCHIVE</span><span class="status">LOCAL PROTOTYPE · NO EXTERNAL MODEL</span></div>
+      <div class="askrow"><input id="askInput" placeholder="例如：为什么制冷剂会不断更换？" /><button class="btn primary" id="askBtn">检索档案 ↗</button></div>
+      <div class="suggestions"><button data-q="为什么制冷剂会不断更换？">为什么制冷剂会不断更换？</button><button data-q="1902 年的空调解决了什么问题？">1902 年的空调解决了什么问题？</button><button data-q="蒸汽压缩循环为什么成为主流？">蒸汽压缩循环为什么成为主流？</button></div>
+      <div class="answer" id="askAnswer"><strong>Ask the Archive</strong><p>你看到的不是一个“万能聊天框”，而是未来知识库的检索入口：问题 → 档案节点 → 来源 → 深度阅读。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">09 / Knowledge Architecture</div><h2>网页只是表面，<br>真正的资产是知识底座</h2></div>
+      <p>每个节点以后都可以同时连接年份、人物、设备、制冷剂、原理和来源。这样网站可以不断扩展，而不是越做越乱。</p>
+    </div>
+    <div class="arch-grid">
+      <div class="arch-card"><span class="arch-num">01</span><h3>History Node</h3><p>事件、人物、设备、技术突破与争议。</p><code>year · title · context · claims</code></div>
+      <div class="arch-card"><span class="arch-num">02</span><h3>Engineering Node</h3><p>循环、压缩机、换热器、制冷剂与性能参数。</p><code>state · equation · diagram · tradeoff</code></div>
+      <div class="arch-card"><span class="arch-num">03</span><h3>Source Node</h3><p>专利、论文、标准、博物馆档案与图片授权。</p><code>source · date · archive · rights</code></div>
+      <div class="arch-card"><span class="arch-num">04</span><h3>Claim Graph</h3><p>让一个结论可以回溯到具体证据，而不是只相信一段 AI 生成文字。</p><code>claim → source → confidence</code></div>
+    </div>
+    <div class="source-legend"><span><i class="dot five"></i>★★★★★ 原始资料</span><span><i class="dot four"></i>★★★★ 机构资料</span><span><i class="dot three"></i>★★★ 学术二手研究</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong style="color:var(--ink)">热的历史 / THE HISTORY OF HEAT</strong><br>第一版原型｜以问题驱动的制冷空调史数字博物馆</div>
+    <div>下一步：补充可核验的原始文献与图像版权信息；扩展为设备档案、专利卡片、标准演化与专题文章。</div>
+  </div>
+</footer>
+
+
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>

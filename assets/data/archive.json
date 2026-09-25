@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1",
+  "project": "Cooling Archive",
+  "note": "Starter knowledge-core index. Historical claims should gain source/provenance records before publication as verified research.",
+  "nodes": [
+    {
+      "id": "vapor-compression",
+      "type": "engineering",
+      "title_zh": "蒸气压缩制冷循环",
+      "relations": [
+        "compressor",
+        "condenser",
+        "expansion-valve",
+        "evaporator"
+      ]
+    },
+    {
+      "id": "compressor",
+      "type": "component",
+      "title_zh": "压缩机"
+    },
+    {
+      "id": "condenser",
+      "type": "component",
+      "title_zh": "冷凝器"
+    },
+    {
+      "id": "expansion-valve",
+      "type": "component",
+      "title_zh": "膨胀阀"
+    },
+    {
+      "id": "evaporator",
+      "type": "component",
+      "title_zh": "蒸发器"
+    }
+  ]
+}
